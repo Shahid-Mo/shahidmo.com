@@ -3,7 +3,7 @@
  */
 
 export async function getPosts() {
-	const postModules = import.meta.glob('/src/posts/*.md', { eager: true });
+	const postModules = import.meta.glob('../../posts/*.md', { eager: true });
 	const posts = [];
 
 	for (const [path, module] of Object.entries(postModules)) {
@@ -30,7 +30,7 @@ export async function getPosts() {
 
 export async function getPost(slug) {
 	try {
-		const post = await import(`/src/posts/${slug}.md`);
+		const post = await import(`../../posts/${slug}.md`);
 		return {
 			slug,
 			...post.metadata,
