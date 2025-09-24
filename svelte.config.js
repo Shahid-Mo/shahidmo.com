@@ -6,8 +6,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [
 		mdsvex({
-			extensions: ['.md'],
-			layout: './src/lib/components/PostLayout.svelte'
+			extensions: ['.md']
 		})
 	],
 	kit: {
