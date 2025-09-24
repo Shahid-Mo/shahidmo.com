@@ -13,7 +13,8 @@ const config = {
 		adapter: adapter({
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
+			pages: '.svelte-kit/cloudflare'
 		})
 	}
 };
