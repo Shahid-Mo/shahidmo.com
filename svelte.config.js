@@ -11,10 +11,11 @@ const config = {
 	],
 	kit: {
 		adapter: adapter({
+			pages: '.svelte-kit/cloudflare',
+			assets: '.svelte-kit/cloudflare',
 			fallback: undefined,
 			precompress: false,
-			strict: true,
-			pages: '.svelte-kit/cloudflare'
+			strict: true
 		})
 	}
 };
